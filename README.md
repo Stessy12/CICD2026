@@ -49,12 +49,15 @@ Avant de commencer, tu dois avoir :
    code
    ````
 
-### 3.2. Dans VS Code,
+### 3.2. Création du kubeconfig afin de permette une communication sécurisé entre notre cluster et gitHub. Nous allons créer :
+
+
+### 3.3. Dans VS Code,
    - Aller vous positionner dans projet (Ctrl-K ctrl-O)
    - Faire menu view et terminal pour afficher un terminal
    - Dans le terminal positionnz-vous dans /home/etudiant/Documents/project/ (cd /home/etudiant/Documents/project/)
 
-### 3.3. Fork du dépôt
+### 3.4. Fork du dépôt
 
 1. Sur ce repo Git, clique sur **Fork** (en haut à droite).
 <br><br>   
@@ -66,7 +69,7 @@ Avant de commencer, tu dois avoir :
 <br><br>
 Tu as maintenant ton propre dépôt avec le code du labo.
 
-### 3.2. Cloner ton fork sur la VM
+### 3.5. Cloner ton fork sur la VM
 
 Sur la VM (dans VS Code ou terminal) tu vas téléchager de ton git le projet en local sur la vm dans le répertoire project.
 
@@ -263,7 +266,7 @@ Dans ton dépôt GitHub :
   → le token Docker Hub que tu as créé
 
 - `KUBECONFIG_CONTENT`  
-  → colle ici **tout le contenu** du fichier kubeconfig fourni par ton enseignant
+  → colle ici **tout le contenu** du fichier KUBECONFIG fourni dans le projet
 
 ---
 
