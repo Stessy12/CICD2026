@@ -109,15 +109,15 @@ Ce fichier sera **identique pour tous les étudiants** et peut être utilisé da
 
 ---
 
-# 7️. Test du kubeconfig
+<!--  # 7️. Test du kubeconfig
 
 ```bash
 export KUBECONFIG=./kubeconfig.yaml
 kubectl get pods -n dev
-```
+```  
 
 Si la commande fonctionne, le kubeconfig est valide.
-
+-->
 
 # PS. Il y aura un problème connection réseau entre votre cluster et Github. Voici les 2 options que j'envisage pour le moment. Hésitez pas à me faire des suggestions.
 
