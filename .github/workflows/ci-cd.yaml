@@ -77,11 +77,9 @@ jobs:
       # - tags:      → nom complet de l'image + tag (dev/qa/prod)
       # ------------------------------------------------------------
       - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: ${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.TAG }}
+        run: |
+          docker build -t ${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.TAG }} .
+          docker push ${{ env.IMAGE_NAME }}:${{ steps.vars.outputs.TAG }}
 
       # ------------------------------------------------------------
       # Étape 6 : Installer kubectl
