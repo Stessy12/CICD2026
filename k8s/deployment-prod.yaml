@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hello-app
-          image: DOCKER_HUB_USERNAME/hello-app:prod
+          image: stessy12/hello-app:prod
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
