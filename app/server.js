@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 const ENV = process.env.APP_ENV || 'dev';
 
 const messages = {
-  dev: "Comment ca va l'environnemnt de DEV",
+  dev: "Allo de l'environnemnt de DEV",
   qa: "Bonjour de l'environnement de QA",
   prod: "Bonjour de l'environnement de PROD",
 };
